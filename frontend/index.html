@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ส่วนที่ไม่แสดงออกไปในหน้าจอของ Browser -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document 2</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- ส่วนที่แสดงออกไปในหน้าจอของ Browser -->
+<a href="user.html" class="view-project-button">View Project</a>
+<h1>
+  Project Management System
+</h1>
+
+  <div class="container">
+    <!-- 3. form -->
+    
+    <div class="flex form-input">
+      <div class="header-form">ชื่อโครงการ</div>
+      <input class="form" name="projectname" type="text">
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">รายละเอียด</div>
+      <input class="form" name="detail" type="text">
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">ผู้รับผิดชอบ</div>
+      <input class="form" name="responsible" type="text">
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">กิจกรรม</div>
+      <input class="form" name="activity" type="text">
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">เวลาเริ่ม</div>
+      <input class="form" name="start" type="date">
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">เวลาจบ</div>
+      <input class="form" name="end" type="date">
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">ความคืบหน้า(%)</div>
+      <input class="form" name="progress" type="number">
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">งบประมาณต้นทุน</div>
+      <input class="form" name="cost_budget" type="number">
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">งบประมาณการเงิน</div>
+      <input class="form" name="financial_budget" type="number">
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">รายงานการใช้จ่าย</div>
+      <input class="form" name="spending" type="text">
+    </div>
+    
+    
+    <div id="message" class="message"></div>
+    
+    <div class="center">
+      <button onclick="submitData()" class="button">ส่งข้อมูล</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
