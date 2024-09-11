@@ -7,6 +7,7 @@ body {
     background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/5278b973057517.5bfd226687bb7.jpg") ;
     background-size: cover;
     align-items: center;
+    backdrop-filter: blur(2px);
    
     
 }
@@ -14,12 +15,13 @@ body {
     max-width: 600px;
     margin: auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    text-align: left;
     background-color: white;
+    border-radius: 25px;
+    text-align: left;
     backdrop-filter: blur(10px);
-    background: transparent;
+    box-shadow: 2 2 10px rgba(0, 0, 0, 0.2);
+    
+   
 }
 .header-form {
     /* border: 1px solid white; /* กำหนดเส้นขอบ */
@@ -33,9 +35,19 @@ body {
   }
   
 .message{
-
+    margin-top: 10px;
     border-radius: 8px;
-    background-color: red;
+    background-color: #f36c60;
+}
+
+.message.danger{
+    padding: 10px;
+
+}
+
+.message.success{
+    padding: 10px;
+    background-color: green;
 }
 
 h1 {
@@ -57,6 +69,8 @@ form {
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(15px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    
 }
 
 label {
